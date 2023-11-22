@@ -1,0 +1,15 @@
+modules:
+  macro:
+    - key: workflow-status
+      function: main
+      title: Workflow Status
+      description: Provide intuitive and descriptive statuses to reflect the current state of a task accurately
+      config:
+        function: workflow-status-config
+  function:
+    - key: main
+      handler: index.run
+    - key: workflow-status-config
+      handler: index.config
+app:
+  id: ari:cloud:ecosystem::app/4d227989-0eca-42b3-8c14-7ac195fddf31
